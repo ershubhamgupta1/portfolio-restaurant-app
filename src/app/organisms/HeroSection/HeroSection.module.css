@@ -1,0 +1,36 @@
+.gmErrContainer {
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-color: #e8eaed;
+    position: relative;
+    left: 0;
+    top: 0;
+    }
+    .gmErrContent {
+        border-radius: 1px;
+        padding-top: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+        position: static;
+        /* vertical-align: middle; */
+        display: table-cell;
+    }
+    .gmErrIcon {
+        text-align: center;
+    }
+    .gmErrTitle {
+        margin: 5px;
+        margin-bottom: 20px;
+        color: #3c4043;
+        font-family: Roboto, Arial, sans-serif;
+        text-align: center;
+        font-size: 24px;
+    }
+    .gmErrMessage {
+        margin: 5px;
+        color: #3c4043;
+        font-family: Roboto, Arial, sans-serif;
+        text-align: center;
+        font-size: 12px;
+    }

@@ -1,0 +1,51 @@
+/* styles.module.css */
+
+.heroSection {
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f9fa;
+  }
+  
+  .products .card {
+    margin: 15px;
+  }
+  
+  .sectionHeading {
+    margin: 40px 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .graySection {
+    background: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footerSection {
+    background: #343a40;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    color: white;
+  }
+  
+  .menuImg {
+    max-height: 150px;
+    object-fit: cover;
+  }
+  
+  .productCategory {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
