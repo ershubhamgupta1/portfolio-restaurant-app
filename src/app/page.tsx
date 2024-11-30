@@ -11,7 +11,10 @@ import HighlightItemSection from '@/app/organisms/HighlightItemSection/Highlight
 import Header from '@/app//organisms/Header/Header';
 
 
-const Home = () => {
+const Home = async() => {
+  const response = await fetch('http://localhost:3000/api/items');
+  const { items, categories, banners } = await response.json();
+
   // useEffect(() => {
   //   // If Google Maps script is loaded, initialize the map
   //   if (window.google) {
@@ -53,17 +56,22 @@ const Home = () => {
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false">
         </script>
       </Head>
-      <Script
+      {/* <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
           strategy="afterInteractive"
+      /> */}
+      <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          strategy="beforeInteractive"
       />
+
       <Header />
       <HeroSection />
       <TitleSection />
-      <CategoriesSection />
+      <CategoriesSection items={items} categories={categories} banners={banners} />
       <HighlightItemSection />
       <IntroSection />
-      <BannerSection />
+      <BannerSection banners={banners} />
       <Footer />
     </>
 

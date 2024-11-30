@@ -29,7 +29,13 @@ export async function GET (){
       { id: 9, categoryId: 3,  title: 'Drink', img: '/restaurant-images/drinks.png', price: '2', description: 'Lorem Ipsum' },
 
     ];
-    return NextResponse.json({items, categories});
+
+    const banners = [
+      {title: "Fish and Chips", subTitle: "It's very very testy", showImgFirst:false, img: '/restaurant-images/fish-and-chips.png', description : "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."},
+      {title: "Oh yeah, very nice Burger.", subTitle: "Delicious.",showImgFirst:true, img: '/restaurant-images/burger.png', description : "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."},
+      {title: "Try yourself", subTitle: "Testy", showImgFirst:false, img: '/restaurant-images/drinks.png', description : "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."},
+    ]
+    return NextResponse.json({items, categories, banners});
 }
 // export default function handler(req: NextApiRequest, res: NextApiResponse) {
 //   console.log('enter in handler-------', req.method)

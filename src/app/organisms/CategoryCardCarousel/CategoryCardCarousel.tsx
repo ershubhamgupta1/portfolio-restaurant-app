@@ -8,7 +8,7 @@ const CategoryCarousel = ({ id, title, catItems }: { id: string, title: string, 
     chunkedItems.push(catItems.slice(i, i + 3));
   }
   return (
-    <Carousel id={id}>
+    <Carousel id={id} showBtns={true}>
       {
         chunkedItems.map(itemsChunk => {
           return (

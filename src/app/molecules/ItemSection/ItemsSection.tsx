@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import ItemCard from '../ItemCard/ItemCard'
 import { Item } from '@/app/types/global'

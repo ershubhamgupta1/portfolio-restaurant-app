@@ -2,17 +2,51 @@
 import Image from 'next/image'
 import React from 'react'
 
-const BannerCard = () => {
+interface BannerProps{
+  title:string;
+  subtitle:string;
+  description:string;
+  img:string;
+  showImgFirst:boolean
+
+}
+const BannerCard = (props: BannerProps) => {
+  const {title, subtitle, description, img, showImgFirst} = props;
   return (
       <div className="row featurette">
-        <div className="col-md-7">
-          <h2 className="featurette-heading">Fish and Chips <span className="text-muted">It's very very testy</span></h2>
-          <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div className="col-md-5">
-          <Image src="/restaurant-images/burger.png" width={400} height={400} alt="Generic placeholder image" />
-        </div>
+        {
+          showImgFirst &&
+          <>
+            <BannerImg img={img} />
+            <BannerTxt title={title} subtitle={subtitle} description={description}  />
+          </>
+        }
+        {
+          !showImgFirst &&
+          <>
+            <BannerTxt title={title} subtitle={subtitle} description={description}  />
+            <BannerImg img={img} />
+          </>
+        }
       </div>
+  )
+}
+
+const BannerImg = ({img}:{img:string})=>{
+  return (
+    <div className="col-md-5">
+      <Image src={img} width={400} height={400} alt="Generic placeholder image" />
+    </div>
+  )
+}
+
+const BannerTxt = ({description, title, subtitle}:{description:string, title:string, subtitle:string})=>{
+  return (
+    <div className="col-md-7">
+      <h2 className="featurette-heading">{title} <span className="text-muted">{subtitle}</span></h2>
+      <p className="lead">{description}</p>
+    </div>
+
   )
 }
 
