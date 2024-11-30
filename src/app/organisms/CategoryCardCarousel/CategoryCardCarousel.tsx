@@ -1,16 +1,24 @@
-import Image from "next/image"
+import { Item } from "@/app/types/global";
 import Carousel from "../../molecules/Carousel/Carousel"
-import ItemCard from "@/app/molecules/ItemCard/ItemCard";
+import ItemSection from "@/app/molecules/ItemsSection/ItemsSection";
 
-const CategoryCarousel = ({ id }: { id: string }) => {
-    return (
-      <Carousel id={id}>
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-      </Carousel>
-  
-    )
+const CategoryCarousel = ({ id, title, catItems }: { id: string, title: string, catItems: Item[] }) => {
+  const chunkedItems = [];
+  for (let i = 0; i < catItems.length; i += 3) {
+    chunkedItems.push(catItems.slice(i, i + 3));
   }
-  
-  export default CategoryCarousel;
+  return (
+    <Carousel id={id}>
+      {
+        chunkedItems.map(itemsChunk => {
+          return (
+            <ItemSection items={itemsChunk} title={title} />
+          )
+        })
+      }
+    </Carousel>
+
+  )
+}
+
+export default CategoryCarousel;
