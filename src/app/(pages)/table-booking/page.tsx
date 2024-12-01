@@ -6,7 +6,7 @@ const About = () => {
         <div>
             <div className={styles.pageTitle}>
                 <div className="container">
-                    <h2>Aboutus</h2>
+                    <h2>Table Booking</h2>
                 </div>
             </div>
             <div className="container">

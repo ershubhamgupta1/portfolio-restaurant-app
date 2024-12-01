@@ -6,6 +6,9 @@ body {
   color: #5a5a5a;
 }
 
+.nav-item .active{
+  background-color: #c83a3a;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

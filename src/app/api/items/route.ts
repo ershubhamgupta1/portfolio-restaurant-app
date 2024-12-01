@@ -4,7 +4,6 @@ import { NextResponse } from 'next/server';
 
   
 export async function GET (){
-  console.log('enter in get-----')
     const categories: Category[] = [
         { id: 1, title: 'Breakfast'},
         { id: 2, title: 'Lunch'},

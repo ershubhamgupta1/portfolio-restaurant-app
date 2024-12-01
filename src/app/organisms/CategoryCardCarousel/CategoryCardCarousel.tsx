@@ -1,6 +1,6 @@
 import { Item } from "@/app/types/global";
 import Carousel from "../../molecules/Carousel/Carousel"
-import ItemSection from "@/app/molecules/ItemsSection/ItemsSection";
+import ItemSection from "@/app/molecules/ItemSection/ItemsSection";
 
 const CategoryCarousel = ({ id, title, catItems }: { id: string, title: string, catItems: Item[] }) => {
   const chunkedItems = [];

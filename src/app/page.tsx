@@ -65,14 +65,12 @@ const Home = async() => {
           strategy="beforeInteractive"
       />
 
-      <Header />
       <HeroSection />
       <TitleSection />
       <CategoriesSection items={items} categories={categories} banners={banners} />
       <HighlightItemSection />
       <IntroSection />
       <BannerSection banners={banners} />
-      <Footer />
     </>
 
   )
