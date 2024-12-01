@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Restaurant App  
 
-First, run the development server:
+![App Screenshot](https://github.com/ershubhamgupta1/portfolio-restaurant-app/blob/main/public/screenshot/home-screen.png)  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern, user-friendly restaurant web app designed for seamless browsing and booking.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌟 Features  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Home Page**: A welcoming homepage showcasing the restaurant's highlights.  
+- **About Us**: Learn about the restaurant’s story, vision, and values.  
+- **Contact Page**: Contact details with an easy-to-use form for inquiries.  
+- **Table Booking**: Reserve a table effortlessly using the booking feature.  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Technologies Used  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**:  
+  - [Next.js](https://nextjs.org/)  
+  - [React](https://reactjs.org/)  
+  - [Bootstrap 5](https://getbootstrap.com/)  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Backend**:  
+  - API Routes (Next.js App Router)  
 
-## Deploy on Vercel
+- **Other Tools**:  
+  - CSS Modules for styling  
+  - Google Maps API for location display  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Pages  
+
+1. **Home**: The landing page with a menu carousel and featured sections.  
+2. **About Us**: An overview of the restaurant’s story and values.  
+3. **Contact**: A page for customer inquiries with a responsive contact form.  
+4. **Table Booking**: A dedicated page to book a table online.  
+
+---
+
+## 🛠 Installation  
+
+1. **Clone the repository**  
+   ```bash  
+   git clone https://github.com/ershubhamgupta1/portfolio-restaurant-app  
+   cd portfolio-restaurant-app  
+   ```  
+
+2. **Install dependencies**  
+   ```bash  
+   npm install  
+   ```  
+
+3. **Run the development server**  
+   ```bash  
+   npm run dev  
+   ```  
+
+4. **Build for production**  
+   ```bash  
+   npm run build  
+   npm start  
+   ```  
+
+---
+
+## 🌟 Features to Implement Next
+
+- **Add Dynamic data**: Add Dynamic Data based on different section.
+- **Google APIs**: Google APIs to show restaurant location.
+- **Item Detail Page**: Add one more page to show the detail description about item.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
+## 👤 Author  
+
+**Shubham Gupta**  
+- GitHub: [@shubham-gupta](https://github.com/ershubhamgupta1)  
+- LinkedIn: [Your LinkedIn Profile](linkedin.com/in/shubham-mern-stack-dev)  
+- Email: ershubhamgupta1@gmail.com
+
+
