@@ -84,7 +84,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Shubham Gupta**  
 - GitHub: [@shubham-gupta](https://github.com/ershubhamgupta1)  
-- LinkedIn: [Your LinkedIn Profile](linkedin.com/in/shubham-mern-stack-dev)  
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/shubham-mern-stack-dev)  
 - Email: ershubhamgupta1@gmail.com
 
 
