@@ -15,7 +15,7 @@ const CategoriesSection = async (props:CategoriesSectionProps) => {
         categories.map((category: Category, index: number) => {
           const catItems = items.filter((item: Item) => item.categoryId === category.id);
           return (
-            <CategoryCarousel id={category.title} title={category.title} catItems={catItems} />
+            <CategoryCarousel key={category.title} id={category.title} title={category.title} catItems={catItems} />
           )
         })
       }
