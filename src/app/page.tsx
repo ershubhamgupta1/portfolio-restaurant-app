@@ -8,10 +8,18 @@ import BannerSection from '@/app/organisms/BannerSection/BannerSection';
 import TitleSection from '@/app/organisms/TitleSection/TitleSection';
 import CategoriesSection from '@/app/organisms/CategoriesSection/CategoriesSection';
 import HighlightItemSection from '@/app/organisms/HighlightItemSection/HighlightItemSection';
-import Header from '@/app//organisms/Header/Header';
+// import Header from '@/app//organisms/Header/Header';
 
 
 const Home = async() => {
+  console.log('ready to call fetch------', process.env.NEXT_PUBLIC_BASE_API_URL);
+  if(!process.env.NEXT_PUBLIC_BASE_API_URL) return null;
+  try{
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/items`);
+  }
+  catch(err){
+  console.log('err call fetch------', err);
+  }
   const response = await fetch('http://localhost:3000/api/items');
   const { items, categories, banners } = await response.json();
 
