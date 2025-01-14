@@ -12,15 +12,15 @@ import HighlightItemSection from '@/app/organisms/HighlightItemSection/Highlight
 
 
 const Home = async() => {
-  console.log('ready to call fetch------', process.env.NEXT_PUBLIC_BASE_API_URL);
+  console.log('ready to call fetch------', `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/items`);
   if(!process.env.NEXT_PUBLIC_BASE_API_URL) return null;
   try{
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/items`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/items`);
   }
   catch(err){
   console.log('err call fetch------', err);
   }
-  const response = await fetch('http://localhost:3000/api/items');
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/items`);
   const { items, categories, banners } = await response.json();
 
   // useEffect(() => {
